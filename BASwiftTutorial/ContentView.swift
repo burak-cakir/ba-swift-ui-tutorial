@@ -8,10 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        
+        VStack{
+            
+            Text("Hello Çağatay!")
+                .padding(10)
+//                .foregroundColor(.red)
+//                .font(.title)
+//                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 5)
+//                .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+            
+        
+            
+        }
+        
+     
+        
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
