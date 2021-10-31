@@ -125,38 +125,42 @@ class FetchToDo: ObservableObject{
     
     init() {
         
-        let url = URL(string: "https://jsonplaceholder.typicode.com/todos")!
-        
-        URLSession.shared.dataTask(with: url) {(data, response, error) in
+        func getData() -> [ToDo] {
+            let url = URL(string: "https://jsonplaceholder.typicode.com/todos")!
             
-            do {
-                if let todoData = data {
-                    let decodedData = try JSONDecoder().decode([ToDo].self, from: todoData)
-
-                    //DispatchQueue.main.async {
-                        self.todos = decodedData
-                    //}
-                    
-                }
-                else{
-                    print("No data!")
-                }
+            URLSession.shared.dataTask(with: url) {(data, response, error) in
                 
-//                guard let todoData = data else{
-//                    print("No data!")
-//                    return
-//                }
-//
-//                                    let decodedData = try JSONDecoder().decode([ToDo].self, from: todoData)
-//
-//                                    DispatchQueue.main.async {
-//                                        self.todos = decodedData
-//                                    }
-            }
-            catch{
-                print("Error!")
-            }
-        }.resume()
+                do {
+                    if let todoData = data {
+                        let decodedData = try JSONDecoder().decode([ToDo].self, from: todoData)
+
+                        //DispatchQueue.main.async {
+                            self.todos = decodedData
+                        //}
+                        
+                    }
+                    else{
+                        print("No data!")
+                    }
+                    
+    //                guard let todoData = data else{
+    //                    print("No data!")
+    //                    return
+    //                }
+    //
+    //                                    let decodedData = try JSONDecoder().decode([ToDo].self, from: todoData)
+    //
+    //                                    DispatchQueue.main.async {
+    //                                        self.todos = decodedData
+    //                                    }
+                }
+                catch{
+                    print("Error!")
+                }
+            }.resume()
+            
+            return self.todos
+        }
     
     }
     

@@ -37,6 +37,7 @@
 		1DD0CE0827119176007C5F35 /* SwiftUIArraySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0CE0727119176007C5F35 /* SwiftUIArraySample.swift */; };
 		1DD0CE0A2711A52E007C5F35 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0CE092711A52E007C5F35 /* Product.swift */; };
 		1DD0CE0C2711A58A007C5F35 /* SwiftUIStructSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0CE0B2711A58A007C5F35 /* SwiftUIStructSample.swift */; };
+		1DD31918272EA2C0002DA06A /* SwiftUIFetchOperation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD31917272EA2C0002DA06A /* SwiftUIFetchOperation2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		1DD0CE0727119176007C5F35 /* SwiftUIArraySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIArraySample.swift; sourceTree = "<group>"; };
 		1DD0CE092711A52E007C5F35 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1DD0CE0B2711A58A007C5F35 /* SwiftUIStructSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStructSample.swift; sourceTree = "<group>"; };
+		1DD31917272EA2C0002DA06A /* SwiftUIFetchOperation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFetchOperation2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				1D3F5BC427256282006477B1 /* SwiftUIAlertSample.swift */,
 				1D3E7FC2272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift */,
 				1D3E7FC4272E843600190E41 /* SwiftUIFetchOperation.swift */,
+				1DD31917272EA2C0002DA06A /* SwiftUIFetchOperation2.swift */,
 			);
 			path = BASwiftTutorial;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				1D01845A270055330009D09A /* BASwiftTutorialApp.swift in Sources */,
 				1D3F5BC527256282006477B1 /* SwiftUIAlertSample.swift in Sources */,
 				1D574A542712FC3300523081 /* TopCategory.swift in Sources */,
+				1DD31918272EA2C0002DA06A /* SwiftUIFetchOperation2.swift in Sources */,
 				1D3F5BBE2725415B006477B1 /* SwiftUINavigationSample.swift in Sources */,
 				1DB18A5D271C093900AC33FF /* SpotifyView.swift in Sources */,
 				1DB18A59271ADB3000AC33FF /* SwiftUISample2.swift in Sources */,
