@@ -6,6 +6,7 @@ import SwiftUI
 
 
 
+
 struct SwiftUIStringFunSample: View {
     
     //1. sorunun stateleri

@@ -19,6 +19,8 @@
 		1D0184752700815A0009D09A /* QuestionThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0184742700815A0009D09A /* QuestionThree.swift */; };
 		1D1913C927085DCC0056D9E1 /* SwiftUIStringFunSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1913C827085DCC0056D9E1 /* SwiftUIStringFunSample.swift */; };
 		1D34CEE32712D1F100D99C54 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D34CEE22712D1F100D99C54 /* ProductList.swift */; };
+		1D3E7FC3272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E7FC2272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift */; };
+		1D3E7FC5272E843600190E41 /* SwiftUIFetchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E7FC4272E843600190E41 /* SwiftUIFetchOperation.swift */; };
 		1D3F5BBE2725415B006477B1 /* SwiftUINavigationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F5BBD2725415B006477B1 /* SwiftUINavigationSample.swift */; };
 		1D3F5BC027255A77006477B1 /* SymbolListSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F5BBF27255A77006477B1 /* SymbolListSample.swift */; };
 		1D3F5BC327255AA0006477B1 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F5BC227255AA0006477B1 /* Symbols.swift */; };
@@ -52,6 +54,8 @@
 		1D0184742700815A0009D09A /* QuestionThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionThree.swift; sourceTree = "<group>"; };
 		1D1913C827085DCC0056D9E1 /* SwiftUIStringFunSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStringFunSample.swift; sourceTree = "<group>"; };
 		1D34CEE22712D1F100D99C54 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		1D3E7FC2272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIJsonEncodeDecode.swift; sourceTree = "<group>"; };
+		1D3E7FC4272E843600190E41 /* SwiftUIFetchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFetchOperation.swift; sourceTree = "<group>"; };
 		1D3F5BBD2725415B006477B1 /* SwiftUINavigationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUINavigationSample.swift; sourceTree = "<group>"; };
 		1D3F5BBF27255A77006477B1 /* SymbolListSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolListSample.swift; sourceTree = "<group>"; };
 		1D3F5BC227255AA0006477B1 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				1D3F5BBD2725415B006477B1 /* SwiftUINavigationSample.swift */,
 				1D3F5BBF27255A77006477B1 /* SymbolListSample.swift */,
 				1D3F5BC427256282006477B1 /* SwiftUIAlertSample.swift */,
+				1D3E7FC2272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift */,
+				1D3E7FC4272E843600190E41 /* SwiftUIFetchOperation.swift */,
 			);
 			path = BASwiftTutorial;
 			sourceTree = "<group>";
@@ -218,12 +224,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3E7FC5272E843600190E41 /* SwiftUIFetchOperation.swift in Sources */,
 				1D01847127006FA40009D09A /* SwiftUIQuestionOne.swift in Sources */,
 				1DD0CE0627118DCC007C5F35 /* SwiftUIListSample.swift in Sources */,
 				1D01845C270055330009D09A /* ContentView.swift in Sources */,
 				1D01846927005BCC0009D09A /* SwiftUIButtonSample.swift in Sources */,
 				1D01846D270069920009D09A /* SwiftUITextField.swift in Sources */,
 				1D3F5BC327255AA0006477B1 /* Symbols.swift in Sources */,
+				1D3E7FC3272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift in Sources */,
 				1DD0CE0A2711A52E007C5F35 /* Product.swift in Sources */,
 				1DD0CE0C2711A58A007C5F35 /* SwiftUIStructSample.swift in Sources */,
 				1D574A502712F8F200523081 /* Category.swift in Sources */,

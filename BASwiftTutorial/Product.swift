@@ -16,6 +16,7 @@ struct Product {
     //price int asla olmaz. para formatında olmalı. extension yazıp sonra yöneteceğiz
     var price : Int = 0
     var isActive : Bool = true
+    
 //    var category : Category = Category(name: "...", code: "...", topCategory: nil)
     
 }
