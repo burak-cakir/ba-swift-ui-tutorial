@@ -29,6 +29,10 @@
 		1D574A522712F99E00523081 /* StructComplexDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D574A512712F99E00523081 /* StructComplexDesign.swift */; };
 		1D574A542712FC3300523081 /* TopCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D574A532712FC3300523081 /* TopCategory.swift */; };
 		1D657A0B2712F176008F978C /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D657A0A2712F176008F978C /* AddProductView.swift */; };
+		1D685C56273308D500520171 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D685C55273308D500520171 /* OrderManager.swift */; };
+		1D685C582733093700520171 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D685C572733093700520171 /* OrderModel.swift */; };
+		1D685C5A27330F0100520171 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D685C5927330F0100520171 /* OrderListView.swift */; };
+		1DA2B8652730754400F07B51 /* KursatSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA2B8642730754400F07B51 /* KursatSample.swift */; };
 		1DB18A57271AB3CD00AC33FF /* SwiftUISamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB18A56271AB3CD00AC33FF /* SwiftUISamples.swift */; };
 		1DB18A59271ADB3000AC33FF /* SwiftUISample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB18A58271ADB3000AC33FF /* SwiftUISample2.swift */; };
 		1DB18A5D271C093900AC33FF /* SpotifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB18A5C271C093900AC33FF /* SpotifyView.swift */; };
@@ -65,6 +69,10 @@
 		1D574A512712F99E00523081 /* StructComplexDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructComplexDesign.swift; sourceTree = "<group>"; };
 		1D574A532712FC3300523081 /* TopCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCategory.swift; sourceTree = "<group>"; };
 		1D657A0A2712F176008F978C /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
+		1D685C55273308D500520171 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
+		1D685C572733093700520171 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		1D685C5927330F0100520171 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		1DA2B8642730754400F07B51 /* KursatSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KursatSample.swift; sourceTree = "<group>"; };
 		1DB18A56271AB3CD00AC33FF /* SwiftUISamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISamples.swift; sourceTree = "<group>"; };
 		1DB18A58271ADB3000AC33FF /* SwiftUISample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISample2.swift; sourceTree = "<group>"; };
 		1DB18A5C271C093900AC33FF /* SpotifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyView.swift; sourceTree = "<group>"; };
@@ -138,6 +146,10 @@
 				1D3E7FC2272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift */,
 				1D3E7FC4272E843600190E41 /* SwiftUIFetchOperation.swift */,
 				1DD31917272EA2C0002DA06A /* SwiftUIFetchOperation2.swift */,
+				1DA2B8642730754400F07B51 /* KursatSample.swift */,
+				1D685C55273308D500520171 /* OrderManager.swift */,
+				1D685C572733093700520171 /* OrderModel.swift */,
+				1D685C5927330F0100520171 /* OrderListView.swift */,
 			);
 			path = BASwiftTutorial;
 			sourceTree = "<group>";
@@ -229,11 +241,13 @@
 			files = (
 				1D3E7FC5272E843600190E41 /* SwiftUIFetchOperation.swift in Sources */,
 				1D01847127006FA40009D09A /* SwiftUIQuestionOne.swift in Sources */,
+				1D685C5A27330F0100520171 /* OrderListView.swift in Sources */,
 				1DD0CE0627118DCC007C5F35 /* SwiftUIListSample.swift in Sources */,
 				1D01845C270055330009D09A /* ContentView.swift in Sources */,
 				1D01846927005BCC0009D09A /* SwiftUIButtonSample.swift in Sources */,
 				1D01846D270069920009D09A /* SwiftUITextField.swift in Sources */,
 				1D3F5BC327255AA0006477B1 /* Symbols.swift in Sources */,
+				1D685C56273308D500520171 /* OrderManager.swift in Sources */,
 				1D3E7FC3272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift in Sources */,
 				1DD0CE0A2711A52E007C5F35 /* Product.swift in Sources */,
 				1DD0CE0C2711A58A007C5F35 /* SwiftUIStructSample.swift in Sources */,
@@ -250,8 +264,10 @@
 				1DB18A5D271C093900AC33FF /* SpotifyView.swift in Sources */,
 				1DB18A59271ADB3000AC33FF /* SwiftUISample2.swift in Sources */,
 				1D01846B27005F8D0009D09A /* SwiftUIImgSample.swift in Sources */,
+				1D685C582733093700520171 /* OrderModel.swift in Sources */,
 				1DB18A5F271C1C8900AC33FF /* SwiftUIGridSample.swift in Sources */,
 				1DB18A57271AB3CD00AC33FF /* SwiftUISamples.swift in Sources */,
+				1DA2B8652730754400F07B51 /* KursatSample.swift in Sources */,
 				1D34CEE32712D1F100D99C54 /* ProductList.swift in Sources */,
 				1D3F5BC027255A77006477B1 /* SymbolListSample.swift in Sources */,
 				1D0184752700815A0009D09A /* QuestionThree.swift in Sources */,
