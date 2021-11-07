@@ -15,10 +15,11 @@ struct OrderListView: View {
         
         NavigationView{
 
-            List(orderManager.getAll()){ order in
+            List(orderManager.orders){ order in
 
                 NavigationLink(
 
+                    //destination: Text("data"),
                     destination: OrderDetailView(id: order.id),
                     label: {
                         Text(order.shipName)
@@ -27,6 +28,9 @@ struct OrderListView: View {
                 .navigationTitle("Order List")
                 .navigationBarTitleDisplayMode(.inline)
 
+            }
+            .onAppear(){
+                orderManager.getAll()
             }
         }
         
@@ -47,20 +51,22 @@ struct OrderListView_Previews: PreviewProvider {
 struct OrderDetailView: View {
     
     @ObservedObject var orderManager = OrderManager()
-    var orderId : Int = 0
+    var orderId = 0
+//    @State var data = orderManager.getOrderById(id:222)
     
     init(id:Int) {
         self.orderId = id
     }
-    
-    init() {
-        
-    }
+//
     
     
     var body: some View{
         VStack{
-            Text(orderManager.getOrderById(id: orderId).shipName)
+            Text(orderManager.order.shipName)
+                
+        }
+        .onAppear(){
+            orderManager.getOrderById(id: self.orderId)
         }
    
     }

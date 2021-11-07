@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SwiftUITextField: View {
     
+
     let name : String = "Çağatay"
     let surname : String = "Yıldız"
     

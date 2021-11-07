@@ -9,6 +9,8 @@
 
 import Foundation
 
+
+
 class OrderManager : ObservableObject
 {
 
@@ -47,7 +49,9 @@ class OrderManager : ObservableObject
     func getOrderById(id:Int) -> OrderModel{
         guard let url = URL(string: "https://northwind.vercel.app/api/orders/" + String(id)) else{ return OrderModel()}
         
-        URLSession.shared.dataTask(with: url){(data, response, error) in
+        
+       
+            URLSession.shared.dataTask(with: url){(data, response, error) in
             
             do{
                 if let order = data{
@@ -55,7 +59,7 @@ class OrderManager : ObservableObject
                     let decodeData = try JSONDecoder().decode(OrderModel.self , from: order)
                     
                     DispatchQueue.main.async {
-                        self.order = decodeData
+                    self.order = decodeData
                         
                       }
                   

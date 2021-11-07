@@ -7,7 +7,7 @@ struct ContentView: View {
    
     var body: some View {
         
-        OrderDetailView(id: 10271)
+        Text("Data")
     }
       
 }
