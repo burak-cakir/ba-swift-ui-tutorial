@@ -72,7 +72,7 @@ class CategoryRepository{
 
 
 struct CategoryModel : Codable{
-   // var id: Int = 0
+    var id: Int = 0
     var name:String = ""
     var description:String = ""
     

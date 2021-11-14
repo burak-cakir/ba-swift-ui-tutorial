@@ -17,7 +17,7 @@ class ProductRepository{
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         
-        let postString = "name=\(productModel.name)&discontinued=\(productModel.discontinued)&quantityPerUnit=\(productModel.quantityPerUnit)&unitsInStock=\(productModel.unitsInStock)"
+        let postString = "name=\(productModel.name)&discontinued=\(productModel.discontinued)&quantityPerUnit=\(productModel.quantityPerUnit)&unitsInStock=\(productModel.unitsInStock)&categoryId=\(productModel.categoryId)&supplierId=\(productModel.supplierId)"
         
         request.httpBody = postString.data(using: .utf8)
         
@@ -48,7 +48,8 @@ struct ProductModel : Codable {
      var discontinued : Bool = false
      var quantityPerUnit : String = ""
      var unitsInStock: Int = 5
-     var categoryId : Int = 1
+     var categoryId : Int = 0
+     var supplierId : Int = 0
 }
 
 

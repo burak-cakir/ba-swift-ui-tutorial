@@ -9,19 +9,31 @@ import SwiftUI
 
 struct AddProductForm: View {
     
+    @State var birthDate = Date()
+    
    @State var name : String = ""
    @State var discontinued : Bool = false
    @State var quantityPerUnit : String = ""
    @State var unitsInStock: Int = 5
-   @State var selection : Int = 1
+   @State var categoryId : Int = 1
+    @State var supplierId : Int = 1
+    
+   @State var categories = [CategoryModel]()
+   @State var suppliers = [SupplierModel]()
+    
     
     var productRepository = ProductRepository()
+    var categoryRepository = CategoryRepository()
+    var supplierRepository = SupplierRepository()
     
     
     var body: some View {
         
         NavigationView{
             Form{
+                
+                DatePicker("Doğum tarihi", selection: $birthDate)
+                  
                 
                 Section(header: Text("Ürün Genel Özellikleri")){
                     
@@ -38,15 +50,43 @@ struct AddProductForm: View {
                 }
                 
                 Section(header: Text("Diğer")){
-                    Picker(selection: $selection, label:Text("Categories\(selection)")){
-                        Text("Category-1").tag(1)
-                        Text("Category-2").tag(2)
-                        Text("Category-3").tag(3)
+                    Picker(selection: $categoryId, label:Text("Seçilen Kategori Id: \(categoryId)")){
+                        if(categories.count > 0){
+                                
+                            ForEach(categories, id:\.id){item in
+                                Text(item.name).tag(item.id)
+                            }
+                        }
                     }
+                    .onAppear(){
+                        categoryRepository.getAll(){categoryList in
+                            categories = categoryList
+                        }
+                    }
+                    
+                    
+                    
+                    Picker(selection: $supplierId, label:Text("Seçilen tedarikçi Id: \(supplierId)")){
+                        if(suppliers.count > 0){
+                                
+                            ForEach(suppliers, id:\.id){item in
+                                Text(item.companyName).tag(item.id)
+                            }
+                        }
+                    }
+                    .onAppear(){
+                        supplierRepository.getAll(){supplierList in
+                            suppliers = supplierList
+                        }
+                    }
+                    
+                    
+                    
                     
                     Button("Ekle"){
                         
-                        let model = ProductModel(name: name, discontinued: discontinued, quantityPerUnit: quantityPerUnit, unitsInStock: unitsInStock, categoryId: 1)
+                        let model = ProductModel(name: name, discontinued: discontinued, quantityPerUnit: quantityPerUnit, unitsInStock: unitsInStock,categoryId: categoryId, supplierId: supplierId
+                            )
                         
                         productRepository.add(productModel: model){newProduct in
                             print(newProduct)
