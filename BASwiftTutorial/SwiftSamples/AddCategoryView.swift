@@ -11,6 +11,7 @@ struct AddCategoryView: View {
     
     @State var name : String = ""
     @State var description : String = ""
+    @State var categories : [CategoryModel] = [CategoryModel]()
     
     var categoryRepository = CategoryRepository()
     
@@ -21,10 +22,21 @@ struct AddCategoryView: View {
                 .padding()
             TextField("Description",text:$description)
                 .padding()
+            
             Button("Add"){
-               let categoryModel = CategoryModel(name: name, description: description)
-                categoryRepository.add(categoryModel: categoryModel){ newCategory in
-                    print(newCategory)
+                let categoryModel = CategoryModel(name: name, description: description)
+                 
+                 categoryRepository.add(categoryModel: categoryModel){ newCategory in
+                     categories.append(newCategory)
+                 }
+            }
+            
+            List(categories, id:\.name){ item in
+                Text(item.name)
+            }
+            .onAppear(){
+                categoryRepository.getAll(){categoryList in
+                    categories = categoryList
                 }
             }
             

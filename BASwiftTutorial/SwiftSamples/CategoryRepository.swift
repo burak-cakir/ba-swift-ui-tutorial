@@ -11,6 +11,28 @@ import Foundation
 class CategoryRepository{
     
     
+    func getAll(completionHandler: @escaping([CategoryModel]) -> Void){
+        
+        guard let url = URL(string:  "https://northwind.vercel.app/api/categories") else {return}
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            
+            do{
+                if let returnData = data{
+                    let decodeData = try JSONDecoder().decode([CategoryModel].self, from: returnData)
+                    completionHandler(decodeData)
+                    
+                }
+            }
+            catch{
+                print("Error")
+            }
+            
+        }.resume()
+        
+        
+    }
+    
     //Bu fonksiyon web api ye category ekler. Daha sonra eklenilen kategoriyi (yani servisin döndüğü kategoriyi bana completion Handler olarak verir)
     func add(categoryModel: CategoryModel, completionHandler:  @escaping (CategoryModel)-> Void){
         
@@ -50,6 +72,7 @@ class CategoryRepository{
 
 
 struct CategoryModel : Codable{
+   // var id: Int = 0
     var name:String = ""
     var description:String = ""
     

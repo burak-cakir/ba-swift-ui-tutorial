@@ -42,6 +42,8 @@
 		1D905C4A2740EF5800B136E8 /* SwiftPostDataSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D905C492740EF5800B136E8 /* SwiftPostDataSample.swift */; };
 		1D905C4C2740F6BE00B136E8 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D905C4B2740F6BE00B136E8 /* CategoryRepository.swift */; };
 		1D905C4E2740F9AF00B136E8 /* AddCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D905C4D2740F9AF00B136E8 /* AddCategoryView.swift */; };
+		1D9A1E62274109C100ADAED7 /* AddProductForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A1E61274109C100ADAED7 /* AddProductForm.swift */; };
+		1D9A1E6427410DA600ADAED7 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9A1E6327410DA600ADAED7 /* ProductRepository.swift */; };
 		1DA2B8652730754400F07B51 /* KursatSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA2B8642730754400F07B51 /* KursatSample.swift */; };
 		1DB18A57271AB3CD00AC33FF /* SwiftUISamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB18A56271AB3CD00AC33FF /* SwiftUISamples.swift */; };
 		1DB18A59271ADB3000AC33FF /* SwiftUISample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB18A58271ADB3000AC33FF /* SwiftUISample2.swift */; };
@@ -92,6 +94,8 @@
 		1D905C492740EF5800B136E8 /* SwiftPostDataSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPostDataSample.swift; sourceTree = "<group>"; };
 		1D905C4B2740F6BE00B136E8 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
 		1D905C4D2740F9AF00B136E8 /* AddCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryView.swift; sourceTree = "<group>"; };
+		1D9A1E61274109C100ADAED7 /* AddProductForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductForm.swift; sourceTree = "<group>"; };
+		1D9A1E6327410DA600ADAED7 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
 		1DA2B8642730754400F07B51 /* KursatSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KursatSample.swift; sourceTree = "<group>"; };
 		1DB18A56271AB3CD00AC33FF /* SwiftUISamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISamples.swift; sourceTree = "<group>"; };
 		1DB18A58271ADB3000AC33FF /* SwiftUISample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISample2.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 				1D3F5BBF27255A77006477B1 /* SymbolListSample.swift */,
 				1D01846827005BCC0009D09A /* SwiftUIButtonSample.swift */,
 				1D01846C270069920009D09A /* SwiftUITextField.swift */,
+				1D9A1E61274109C100ADAED7 /* AddProductForm.swift */,
+				1D9A1E6327410DA600ADAED7 /* ProductRepository.swift */,
 			);
 			path = SwiftUISamples;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				1D01846D270069920009D09A /* SwiftUITextField.swift in Sources */,
 				1D3F5BC327255AA0006477B1 /* Symbols.swift in Sources */,
 				1D685C56273308D500520171 /* OrderManager.swift in Sources */,
+				1D9A1E6427410DA600ADAED7 /* ProductRepository.swift in Sources */,
 				1D3E7FC3272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift in Sources */,
 				1DD0CE0A2711A52E007C5F35 /* Product.swift in Sources */,
 				1DD0CE0C2711A58A007C5F35 /* SwiftUIStructSample.swift in Sources */,
@@ -322,6 +329,7 @@
 				1D3F5BBE2725415B006477B1 /* SwiftUINavigationSample.swift in Sources */,
 				1DB18A5D271C093900AC33FF /* SpotifyView.swift in Sources */,
 				1D6190D027367DB10037E045 /* BaWebUser.swift in Sources */,
+				1D9A1E62274109C100ADAED7 /* AddProductForm.swift in Sources */,
 				1DB18A59271ADB3000AC33FF /* SwiftUISample2.swift in Sources */,
 				1D01846B27005F8D0009D09A /* SwiftUIImgSample.swift in Sources */,
 				1D6190CC273677420037E045 /* Oyuncu.swift in Sources */,
