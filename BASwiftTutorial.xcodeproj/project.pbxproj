@@ -39,6 +39,9 @@
 		1D685C56273308D500520171 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D685C55273308D500520171 /* OrderManager.swift */; };
 		1D685C582733093700520171 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D685C572733093700520171 /* OrderModel.swift */; };
 		1D685C5A27330F0100520171 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D685C5927330F0100520171 /* OrderListView.swift */; };
+		1D905C4A2740EF5800B136E8 /* SwiftPostDataSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D905C492740EF5800B136E8 /* SwiftPostDataSample.swift */; };
+		1D905C4C2740F6BE00B136E8 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D905C4B2740F6BE00B136E8 /* CategoryRepository.swift */; };
+		1D905C4E2740F9AF00B136E8 /* AddCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D905C4D2740F9AF00B136E8 /* AddCategoryView.swift */; };
 		1DA2B8652730754400F07B51 /* KursatSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA2B8642730754400F07B51 /* KursatSample.swift */; };
 		1DB18A57271AB3CD00AC33FF /* SwiftUISamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB18A56271AB3CD00AC33FF /* SwiftUISamples.swift */; };
 		1DB18A59271ADB3000AC33FF /* SwiftUISample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB18A58271ADB3000AC33FF /* SwiftUISample2.swift */; };
@@ -86,6 +89,9 @@
 		1D685C55273308D500520171 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		1D685C572733093700520171 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		1D685C5927330F0100520171 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		1D905C492740EF5800B136E8 /* SwiftPostDataSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPostDataSample.swift; sourceTree = "<group>"; };
+		1D905C4B2740F6BE00B136E8 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		1D905C4D2740F9AF00B136E8 /* AddCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryView.swift; sourceTree = "<group>"; };
 		1DA2B8642730754400F07B51 /* KursatSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KursatSample.swift; sourceTree = "<group>"; };
 		1DB18A56271AB3CD00AC33FF /* SwiftUISamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISamples.swift; sourceTree = "<group>"; };
 		1DB18A58271ADB3000AC33FF /* SwiftUISample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISample2.swift; sourceTree = "<group>"; };
@@ -128,36 +134,23 @@
 		1D018458270055330009D09A /* BASwiftTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				1D905C482740EA2A00B136E8 /* SwiftSamples */,
+				1D905C462740E9C200B136E8 /* SwiftUISamples */,
 				1D6190C22736697B0037E045 /* OOPSample */,
 				1D3F5BC127255A83006477B1 /* Sources */,
 				1D018459270055330009D09A /* BASwiftTutorialApp.swift */,
 				1D01845B270055330009D09A /* ContentView.swift */,
-				1D01846827005BCC0009D09A /* SwiftUIButtonSample.swift */,
 				1D01845D270055350009D09A /* Assets.xcassets */,
 				1D018462270055350009D09A /* Info.plist */,
 				1D01845F270055350009D09A /* Preview Content */,
-				1D01846A27005F8D0009D09A /* SwiftUIImgSample.swift */,
-				1D01846C270069920009D09A /* SwiftUITextField.swift */,
 				1D01847027006FA40009D09A /* SwiftUIQuestionOne.swift */,
 				1D018472270071670009D09A /* QuestionTwo.swift */,
 				1D0184742700815A0009D09A /* QuestionThree.swift */,
-				1D1913C827085DCC0056D9E1 /* SwiftUIStringFunSample.swift */,
-				1DD0CE0527118DCC007C5F35 /* SwiftUIListSample.swift */,
-				1DD0CE0727119176007C5F35 /* SwiftUIArraySample.swift */,
-				1DD0CE092711A52E007C5F35 /* Product.swift */,
-				1DD0CE0B2711A58A007C5F35 /* SwiftUIStructSample.swift */,
 				1D34CEE22712D1F100D99C54 /* ProductList.swift */,
 				1D657A0A2712F176008F978C /* AddProductView.swift */,
-				1D574A4F2712F8F200523081 /* Category.swift */,
-				1D574A532712FC3300523081 /* TopCategory.swift */,
-				1D574A512712F99E00523081 /* StructComplexDesign.swift */,
 				1DB18A56271AB3CD00AC33FF /* SwiftUISamples.swift */,
 				1DB18A58271ADB3000AC33FF /* SwiftUISample2.swift */,
-				1DB18A5C271C093900AC33FF /* SpotifyView.swift */,
-				1DB18A5E271C1C8900AC33FF /* SwiftUIGridSample.swift */,
 				1D3F5BBD2725415B006477B1 /* SwiftUINavigationSample.swift */,
-				1D3F5BBF27255A77006477B1 /* SymbolListSample.swift */,
-				1D3F5BC427256282006477B1 /* SwiftUIAlertSample.swift */,
 				1D3E7FC2272E7DBA00190E41 /* SwiftUIJsonEncodeDecode.swift */,
 				1D3E7FC4272E843600190E41 /* SwiftUIFetchOperation.swift */,
 				1DD31917272EA2C0002DA06A /* SwiftUIFetchOperation2.swift */,
@@ -189,7 +182,10 @@
 			isa = PBXGroup;
 			children = (
 				1D6190C3273669C90037E045 /* Ninja.swift */,
+				1D574A4F2712F8F200523081 /* Category.swift */,
 				1D6190C527366D090037E045 /* SwiftUIOOPView.swift */,
+				1D574A532712FC3300523081 /* TopCategory.swift */,
+				1D574A512712F99E00523081 /* StructComplexDesign.swift */,
 				1D6190C7273676AA0037E045 /* Samuray.swift */,
 				1D6190C9273677010037E045 /* Robot.swift */,
 				1D6190CB273677420037E045 /* Oyuncu.swift */,
@@ -197,6 +193,35 @@
 				1D6190CF27367DB10037E045 /* BaWebUser.swift */,
 			);
 			path = OOPSample;
+			sourceTree = "<group>";
+		};
+		1D905C462740E9C200B136E8 /* SwiftUISamples */ = {
+			isa = PBXGroup;
+			children = (
+				1DD0CE0527118DCC007C5F35 /* SwiftUIListSample.swift */,
+				1D01846A27005F8D0009D09A /* SwiftUIImgSample.swift */,
+				1D3F5BC427256282006477B1 /* SwiftUIAlertSample.swift */,
+				1DB18A5C271C093900AC33FF /* SpotifyView.swift */,
+				1DB18A5E271C1C8900AC33FF /* SwiftUIGridSample.swift */,
+				1D3F5BBF27255A77006477B1 /* SymbolListSample.swift */,
+				1D01846827005BCC0009D09A /* SwiftUIButtonSample.swift */,
+				1D01846C270069920009D09A /* SwiftUITextField.swift */,
+			);
+			path = SwiftUISamples;
+			sourceTree = "<group>";
+		};
+		1D905C482740EA2A00B136E8 /* SwiftSamples */ = {
+			isa = PBXGroup;
+			children = (
+				1D1913C827085DCC0056D9E1 /* SwiftUIStringFunSample.swift */,
+				1DD0CE0727119176007C5F35 /* SwiftUIArraySample.swift */,
+				1DD0CE0B2711A58A007C5F35 /* SwiftUIStructSample.swift */,
+				1DD0CE092711A52E007C5F35 /* Product.swift */,
+				1D905C492740EF5800B136E8 /* SwiftPostDataSample.swift */,
+				1D905C4B2740F6BE00B136E8 /* CategoryRepository.swift */,
+				1D905C4D2740F9AF00B136E8 /* AddCategoryView.swift */,
+			);
+			path = SwiftSamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +296,7 @@
 				1D3E7FC5272E843600190E41 /* SwiftUIFetchOperation.swift in Sources */,
 				1D01847127006FA40009D09A /* SwiftUIQuestionOne.swift in Sources */,
 				1D685C5A27330F0100520171 /* OrderListView.swift in Sources */,
+				1D905C4E2740F9AF00B136E8 /* AddCategoryView.swift in Sources */,
 				1D6190C627366D090037E045 /* SwiftUIOOPView.swift in Sources */,
 				1DD0CE0627118DCC007C5F35 /* SwiftUIListSample.swift in Sources */,
 				1D01845C270055330009D09A /* ContentView.swift in Sources */,
@@ -289,6 +315,7 @@
 				1D6190C8273676AA0037E045 /* Samuray.swift in Sources */,
 				1D657A0B2712F176008F978C /* AddProductView.swift in Sources */,
 				1D01845A270055330009D09A /* BASwiftTutorialApp.swift in Sources */,
+				1D905C4A2740EF5800B136E8 /* SwiftPostDataSample.swift in Sources */,
 				1D3F5BC527256282006477B1 /* SwiftUIAlertSample.swift in Sources */,
 				1D574A542712FC3300523081 /* TopCategory.swift in Sources */,
 				1DD31918272EA2C0002DA06A /* SwiftUIFetchOperation2.swift in Sources */,
@@ -306,6 +333,7 @@
 				1D6190CE27367B170037E045 /* BAProduct.swift in Sources */,
 				1D34CEE32712D1F100D99C54 /* ProductList.swift in Sources */,
 				1D3F5BC027255A77006477B1 /* SymbolListSample.swift in Sources */,
+				1D905C4C2740F6BE00B136E8 /* CategoryRepository.swift in Sources */,
 				1D0184752700815A0009D09A /* QuestionThree.swift in Sources */,
 				1D018473270071670009D09A /* QuestionTwo.swift in Sources */,
 			);

@@ -51,6 +51,7 @@ class FetchWebUsers : ObservableObject {
         
         let url = URL(string: "http://localhost:3000/api/user")!
         
+        //bir url e dataTask metoduyla ulaşmak istiyorsanız ve bu sadece bir URL objesinden oluşuyorsa bu bir GET isteğidir
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             
             do {
