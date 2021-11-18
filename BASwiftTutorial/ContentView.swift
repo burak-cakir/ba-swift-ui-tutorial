@@ -7,8 +7,8 @@ struct ContentView: View {
    
     var body: some View {
         
-        
-        AddCategoryView()
+        OrderListScreen()
+//        AddCategoryView()
 //
 //        Button("Add"){
 //
