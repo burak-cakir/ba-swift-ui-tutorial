@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CoinListView: View {
     
-    @State var coins : CoinModel = CoinModel()
+    @State var coins : [Coins] =  [Coins]()
     
     var coinRepository = CoinRepository()
     
@@ -17,10 +17,17 @@ struct CoinListView: View {
         
         VStack{
             
+            List(coins, id:\.uuid ){item in
+                Text(item.name)
+            }
+            
         }
         .onAppear(){
-            coinRepository.getAll(){result in
-                    coins = result
+//            coinRepository.getAll(){result in
+//                coins = result.data.coins
+//            }
+            coinRepository.getAllCoins(){ result in
+                coins = result
             }
         }
         

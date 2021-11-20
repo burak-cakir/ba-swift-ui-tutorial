@@ -32,6 +32,29 @@ class CoinRepository{
         
         
     }
+    
+    func getAllCoins(completionHandler: @escaping([Coins]) -> Void){
+        
+        guard let url = URL(string: "https://api.coinranking.com/v2/coins") else {return}
+        
+        URLSession.shared.dataTask(with: url){(data, response, error) in
+            
+            do{
+                
+                if let coinsData = data{
+                    let decodeData = try JSONDecoder().decode(CoinModel.self, from: coinsData)
+                    
+                    completionHandler(decodeData.data.coins);
+                }
+            }
+            catch{
+                print(error)
+            }
+            
+        }.resume()
+        
+        
+    }
 
     }
 
@@ -52,6 +75,8 @@ struct Stats : Codable{
 }
 
 struct Coins : Codable{
+    var name : String = ""
+    var symbol : String = ""
     var uuid: String = ""
     var sparkline : [String] =  [String]()
 }
